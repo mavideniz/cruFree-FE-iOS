@@ -1,1 +1,1 @@
-# crueFree-FE-iOS
+# cruFree-FE-iOS
