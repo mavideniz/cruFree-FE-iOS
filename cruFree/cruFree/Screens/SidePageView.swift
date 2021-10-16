@@ -8,39 +8,55 @@
 import SwiftUI
 
 struct SidePageView: View {
+    @Environment(\.openURL) var openURL
+    
     var body: some View {
         List{
+            
             Section{
-                Button(action: {
-                    self.showFeatures()
-                    
-                }) {
-                    InfoCell(title: "What is Cruelty Free?", imgName: "hare.fill", clr: .green)
-                }
+                NavigationLink(destination: CrueltyFree()) {
+                    Button(action: {
+                        self.showFeatures()
+                        
+                    }) {
+                        InfoCell(title: "Cruelty Free?", imgName: "pawprint.fill", clr: .green)
+                    }
+                       }
+                NavigationLink(destination: VeganProduct()) {
+                    Button(action: {
+                        self.showFeatures()
+                        
+                    }) {
+                        InfoCell(title: "Vegan Product?", imgName: "leaf.fill", clr: .green)
+                    }
+                       }
             }
             Section{
+                NavigationLink(destination: Developers()) {
+                    Button(action: {
+                        self.showFeatures()
+                        
+                    }) {
+                        InfoCell(title: "Developers", imgName: "person.fill", clr: .purple)
+                    }
+                       }
                 Button(action: {
-                    self.showFeatures()
-                    
-                }) {
-                    InfoCell(title: "Developers", imgName: "person.fill", clr: .purple)
-                }
-                Button(action: {
-                    self.showFeatures()
-                    
+                    openURL(URL(string: "https://www.apple.com")!) //ADD BUY ME COFFEE LİNK
+
                 }) {
                     InfoCell(title: "Buy me coffee", imgName: "sparkle", clr: .purple)
                 }
                 
             }
             Section{
-                Button(action: {
-                    self.showFeatures()
-                    
-                }) {
-                    InfoCell(title: "F.A.Q.", imgName: "questionmark.circle.fill", clr: .green)
+                NavigationLink(destination: FAQ()) {
+                    Button(action: {
+                        self.showFeatures()
+                        
+                    }) {
+                        InfoCell(title: "FAQ", imgName: "questionmark.circle.fill", clr: .green)
+                    }
                 }
-                
             }
         }
     }

@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    @State private var searchText : String = ""
+    
     var body: some View {
-        Text("Search View")
+        VStack{
+            SearchBar(text: $searchText, placeholder: "Search products")
+            
+            Text("Show all products")
+            Spacer()
+            
+        }
+        
     }
 }
 

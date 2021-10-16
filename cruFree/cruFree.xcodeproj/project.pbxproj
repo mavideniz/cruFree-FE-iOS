@@ -16,6 +16,11 @@
 		66170AD3271ABC9C00899506 /* SidePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AD2271ABC9C00899506 /* SidePageView.swift */; };
 		66170AD7271AC11200899506 /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AD6271AC11200899506 /* searchBar.swift */; };
 		66170ADB271ADC9600899506 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADA271ADC9600899506 /* InfoCell.swift */; };
+		66170ADD271AE98300899506 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADC271AE98300899506 /* ProductListView.swift */; };
+		66170AE0271AEE9A00899506 /* CrueltyFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADF271AEE9A00899506 /* CrueltyFree.swift */; };
+		66170AE3271AEF5500899506 /* VeganProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AE2271AEF5500899506 /* VeganProduct.swift */; };
+		66170AE5271AF09F00899506 /* Developers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AE4271AF09F00899506 /* Developers.swift */; };
+		66170AE7271AF0C500899506 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AE6271AF0C500899506 /* FAQ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		66170AD2271ABC9C00899506 /* SidePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePageView.swift; sourceTree = "<group>"; };
 		66170AD6271AC11200899506 /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
 		66170ADA271ADC9600899506 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		66170ADC271AE98300899506 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		66170ADF271AEE9A00899506 /* CrueltyFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrueltyFree.swift; sourceTree = "<group>"; };
+		66170AE2271AEF5500899506 /* VeganProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganProduct.swift; sourceTree = "<group>"; };
+		66170AE4271AF09F00899506 /* Developers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developers.swift; sourceTree = "<group>"; };
+		66170AE6271AF0C500899506 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +90,10 @@
 		66170ACD271ABC3300899506 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				66170ADE271AEE7100899506 /* InfoScreens */,
 				66170AC1271ABA1600899506 /* ContentView.swift */,
 				66170ACE271ABC5A00899506 /* HomeView.swift */,
+				66170ADC271AE98300899506 /* ProductListView.swift */,
 				66170AD0271ABC7100899506 /* SearchView.swift */,
 				66170AD2271ABC9C00899506 /* SidePageView.swift */,
 				66170ABF271ABA1600899506 /* cruFreeApp.swift */,
@@ -96,6 +108,17 @@
 				66170ADA271ADC9600899506 /* InfoCell.swift */,
 			);
 			path = Functions;
+			sourceTree = "<group>";
+		};
+		66170ADE271AEE7100899506 /* InfoScreens */ = {
+			isa = PBXGroup;
+			children = (
+				66170ADF271AEE9A00899506 /* CrueltyFree.swift */,
+				66170AE2271AEF5500899506 /* VeganProduct.swift */,
+				66170AE4271AF09F00899506 /* Developers.swift */,
+				66170AE6271AF0C500899506 /* FAQ.swift */,
+			);
+			name = InfoScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				66170ADB271ADC9600899506 /* InfoCell.swift in Sources */,
+				66170AE3271AEF5500899506 /* VeganProduct.swift in Sources */,
+				66170ADD271AE98300899506 /* ProductListView.swift in Sources */,
+				66170AE0271AEE9A00899506 /* CrueltyFree.swift in Sources */,
 				66170AD1271ABC7100899506 /* SearchView.swift in Sources */,
+				66170AE5271AF09F00899506 /* Developers.swift in Sources */,
 				66170ACF271ABC5A00899506 /* HomeView.swift in Sources */,
 				66170AC2271ABA1600899506 /* ContentView.swift in Sources */,
+				66170AE7271AF0C500899506 /* FAQ.swift in Sources */,
 				66170AC0271ABA1600899506 /* cruFreeApp.swift in Sources */,
 				66170AD3271ABC9C00899506 /* SidePageView.swift in Sources */,
 				66170AD7271AC11200899506 /* searchBar.swift in Sources */,

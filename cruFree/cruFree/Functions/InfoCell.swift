@@ -26,9 +26,7 @@ struct InfoCell: View {
             
             Spacer()
             
-            Image(systemName: "chevron.right")
-                .font(.headline)
-                .foregroundColor(.gray)
+
         }
     }
 }

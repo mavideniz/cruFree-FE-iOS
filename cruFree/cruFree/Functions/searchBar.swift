@@ -7,23 +7,38 @@
 
 import SwiftUI
 
-struct SearchBar: View {
-    @Binding var searchText: String
+struct SearchBar: UIViewRepresentable {
 
+    @Binding var text: String
+    var placeholder: String
 
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(Color("LightGray"))
-            HStack {
-                Image(systemName: "magnifyingglass")
-                TextField("Search ..", text: $searchText)
-            }
-            .foregroundColor(.gray)
-            .padding(.leading, 13)
+    class Coordinator: NSObject, UISearchBarDelegate {
+
+        @Binding var text: String
+
+        init(text: Binding<String>) {
+            _text = text
         }
-            .frame(height: 40)
-            .cornerRadius(13)
-            .padding()
+
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            text = searchText
+        }
+    }
+
+    func makeCoordinator() -> SearchBar.Coordinator {
+        return Coordinator(text: $text)
+    }
+
+    func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
+        let searchBar = UISearchBar(frame: .zero)
+        searchBar.delegate = context.coordinator
+        searchBar.placeholder = placeholder
+        searchBar.searchBarStyle = .minimal
+        searchBar.autocapitalizationType = .none
+        return searchBar
+    }
+
+    func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar>) {
+        uiView.text = text
     }
 }
