@@ -11,6 +11,7 @@ struct SidePageView: View {
     @Environment(\.openURL) var openURL
     
     var body: some View {
+        NavigationView{
         List{
             
             Section{
@@ -37,14 +38,14 @@ struct SidePageView: View {
                         self.showFeatures()
                         
                     }) {
-                        InfoCell(title: "Developers", imgName: "person.fill", clr: .purple)
+                        InfoCell(title: "Developers", imgName: "person.fill", clr: Color("NavColor"))
                     }
                        }
                 Button(action: {
                     openURL(URL(string: "https://www.apple.com")!) //ADD BUY ME COFFEE LİNK
 
                 }) {
-                    InfoCell(title: "Buy me coffee", imgName: "sparkle", clr: .purple)
+                    InfoCell(title: "Buy me coffee", imgName: "sparkle", clr: Color("NavColor"))
                 }
                 
             }
@@ -58,6 +59,12 @@ struct SidePageView: View {
                     }
                 }
             }
+        }.navigationBarTitle("",displayMode: .inline)
+                .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                NavLogo()
+                            }
+                        }
         }
     }
     func showFeatures(){

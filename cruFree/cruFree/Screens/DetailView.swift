@@ -7,27 +7,23 @@
 
 import SwiftUI
 
-struct ProductListView: View {
+struct DetailView: View {
     
     @State private var searchText : String = ""
     
     var body: some View {
-        ZStack{
             VStack{
-                SearchBar(text: $searchText, placeholder: "Search categories")
                 List{
                     Text("test")
                     Text("test")
                     Text("test")
                 }
             }
-            
-        }
     }
 }
 
-struct ProductListView_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListView()
+        DetailView()
     }
 }

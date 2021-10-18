@@ -9,37 +9,53 @@ import SwiftUI
 
 struct HomeView: View {
     
+   
+    
     @State private var searchText : String = ""
     
     var body: some View {
-        ZStack{
-            ScrollView {
-                VStack{
-                    SearchBar(text: $searchText, placeholder: "Search categories")
-                    LazyVGrid(columns: [.init(), .init()]) {
-                        ForEach(0..<15) { _ in
-                            NavigationLink(destination: ProductListView()) {
-                                GroupBox(){
-                                    VStack{
-                                        HStack{
-                                            Image("icon")
-                                                        .resizable()
-                                                        .scaledToFit()
-                                                        .frame(width: 30)
-                                            Text("Title").font(.system(size: 25, weight: .bold))
+            NavigationView{
+                    ScrollView {
+                        VStack{
+                            SearchBar(text: $searchText, placeholder: "Search categories")
+                            LazyVGrid(columns: [.init(), .init()]) {
+                                ForEach(0..<15) { _ in
+                                    NavigationLink(destination: DetailView()) {
+                                        GroupBox(){
+                                            VStack{
+                                                HStack{
+                                                    Image("icon")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width: 30)
+                                                    Text("Title").font(.system(size: 25, weight: .bold))
+                                                }
+                                                Text("Bu bir kozmetik ürünüdür.").font(.system(size: 16))
+                                            }
                                         }
-                                        Text("Bu bir kozmetik ürünüdür.").font(.system(size: 16))
+                                        .foregroundColor(.black)
+                                        .groupBoxStyle(CardGroupBoxStyle())
                                     }
                                 }
-                                .foregroundColor(.black)
-                                .groupBoxStyle(CardGroupBoxStyle())
-                            }
+                            }.padding()
                         }
-                    }.padding()
-                }
-            }
-        }.navigationTitle("CruFree 🐇")
+                    }
+                    .navigationBarTitle("",displayMode: .inline)
+                    .toolbar {
+                                ToolbarItem(placement: .principal) {
+                                    NavLogo()
+                                }
+                            }
+                  
+            }.navigationBarColor(backgroundColor: UIColor(named : "NavColor")!, tintColor: .white)
+            
     }
+}
+
+extension View {
+  func navigationBarColor(backgroundColor: UIColor, tintColor: UIColor) -> some View {
+    self.modifier(NavigationBarColor(backgroundColor: backgroundColor, tintColor: tintColor))
+  }
 }
 
 struct CardGroupBoxStyle: GroupBoxStyle {

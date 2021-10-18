@@ -8,33 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
+
     @State private var searchText = ""
     
     
     var body: some View {
-        ZStack{
-            NavigationView{
-                VStack{       
-                    TabView {
-                        HomeView()
-                            .tabItem {
-                                Label("Home", systemImage: "house")
-                            }
-                        SearchView()
-                            .tabItem {
-                                Label("Search", systemImage: "magnifyingglass")
-                            }
-                        SidePageView()
-                            .tabItem {
-                                Label("Info", systemImage: "info.circle.fill")
-                            }
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
                     }
-                }
-                
+                SidePageView()
+                    .tabItem {
+                        Label("Info", systemImage: "info.circle.fill")
+                    }
             }
-        }
     }
 }
 

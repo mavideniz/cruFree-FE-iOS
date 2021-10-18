@@ -12,15 +12,16 @@
 		66170AC4271ABA1700899506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66170AC3271ABA1700899506 /* Assets.xcassets */; };
 		66170AC7271ABA1700899506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66170AC6271ABA1700899506 /* Preview Assets.xcassets */; };
 		66170ACF271ABC5A00899506 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ACE271ABC5A00899506 /* HomeView.swift */; };
-		66170AD1271ABC7100899506 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AD0271ABC7100899506 /* SearchView.swift */; };
 		66170AD3271ABC9C00899506 /* SidePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AD2271ABC9C00899506 /* SidePageView.swift */; };
 		66170AD7271AC11200899506 /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AD6271AC11200899506 /* searchBar.swift */; };
 		66170ADB271ADC9600899506 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADA271ADC9600899506 /* InfoCell.swift */; };
-		66170ADD271AE98300899506 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADC271AE98300899506 /* ProductListView.swift */; };
+		66170ADD271AE98300899506 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADC271AE98300899506 /* DetailView.swift */; };
 		66170AE0271AEE9A00899506 /* CrueltyFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170ADF271AEE9A00899506 /* CrueltyFree.swift */; };
 		66170AE3271AEF5500899506 /* VeganProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AE2271AEF5500899506 /* VeganProduct.swift */; };
 		66170AE5271AF09F00899506 /* Developers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AE4271AF09F00899506 /* Developers.swift */; };
 		66170AE7271AF0C500899506 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AE6271AF0C500899506 /* FAQ.swift */; };
+		66170AEB271DB60800899506 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AEA271DB60800899506 /* NavigationBarColor.swift */; };
+		66170AEE271DBCC000899506 /* NavLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66170AED271DBCC000899506 /* NavLogo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +31,16 @@
 		66170AC3271ABA1700899506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66170AC6271ABA1700899506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66170ACE271ABC5A00899506 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		66170AD0271ABC7100899506 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		66170AD2271ABC9C00899506 /* SidePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePageView.swift; sourceTree = "<group>"; };
 		66170AD6271AC11200899506 /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
 		66170ADA271ADC9600899506 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
-		66170ADC271AE98300899506 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		66170ADC271AE98300899506 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		66170ADF271AEE9A00899506 /* CrueltyFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrueltyFree.swift; sourceTree = "<group>"; };
 		66170AE2271AEF5500899506 /* VeganProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganProduct.swift; sourceTree = "<group>"; };
 		66170AE4271AF09F00899506 /* Developers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developers.swift; sourceTree = "<group>"; };
 		66170AE6271AF0C500899506 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		66170AEA271DB60800899506 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+		66170AED271DBCC000899506 /* NavLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLogo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +95,7 @@
 				66170ADE271AEE7100899506 /* InfoScreens */,
 				66170AC1271ABA1600899506 /* ContentView.swift */,
 				66170ACE271ABC5A00899506 /* HomeView.swift */,
-				66170ADC271AE98300899506 /* ProductListView.swift */,
-				66170AD0271ABC7100899506 /* SearchView.swift */,
+				66170ADC271AE98300899506 /* DetailView.swift */,
 				66170AD2271ABC9C00899506 /* SidePageView.swift */,
 				66170ABF271ABA1600899506 /* cruFreeApp.swift */,
 			);
@@ -106,6 +107,8 @@
 			children = (
 				66170AD6271AC11200899506 /* searchBar.swift */,
 				66170ADA271ADC9600899506 /* InfoCell.swift */,
+				66170AEA271DB60800899506 /* NavigationBarColor.swift */,
+				66170AED271DBCC000899506 /* NavLogo.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -193,15 +196,16 @@
 			files = (
 				66170ADB271ADC9600899506 /* InfoCell.swift in Sources */,
 				66170AE3271AEF5500899506 /* VeganProduct.swift in Sources */,
-				66170ADD271AE98300899506 /* ProductListView.swift in Sources */,
+				66170ADD271AE98300899506 /* DetailView.swift in Sources */,
 				66170AE0271AEE9A00899506 /* CrueltyFree.swift in Sources */,
-				66170AD1271ABC7100899506 /* SearchView.swift in Sources */,
 				66170AE5271AF09F00899506 /* Developers.swift in Sources */,
 				66170ACF271ABC5A00899506 /* HomeView.swift in Sources */,
 				66170AC2271ABA1600899506 /* ContentView.swift in Sources */,
+				66170AEB271DB60800899506 /* NavigationBarColor.swift in Sources */,
 				66170AE7271AF0C500899506 /* FAQ.swift in Sources */,
 				66170AC0271ABA1600899506 /* cruFreeApp.swift in Sources */,
 				66170AD3271ABC9C00899506 /* SidePageView.swift in Sources */,
+				66170AEE271DBCC000899506 /* NavLogo.swift in Sources */,
 				66170AD7271AC11200899506 /* searchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
